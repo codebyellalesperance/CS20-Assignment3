@@ -36,11 +36,11 @@ function placeOrder() {
     document.getElementById('orderSummary').innerHTML = `
         <p>Hotdogs Ordered: ${numDogs} (Total: $${showMoney(numDogs * PRICE_HOTDOG)})</p>
         <p>Fries Ordered: ${numFries} (Total: $${showMoney(numFries * PRICE_FRIES)})</p>
-        <p>Sodas Ordered: ${numSoda} (Total: $${showMoney(numSoda * PRICE_SODA)})</p>
+        <p>Sodas Ordered: ${numSoda} (Total: $${showMoney(numSoda * PRICE_SODA)})<hr></p>
         <p>Subtotal (Before Discount): $${showMoney(originalSubtotal)}</p>
         <p>Discount: $${showMoney(discount)}</p>
         <p>Subtotal (After Discount): $${showMoney(subtotal)}</p>
         <p>Tax (6.25%): $${showMoney(tax)}</p>
-        <p>Final Total: $${showMoney(total)}</p>
+        <p style="color:red;"><b>Final Total: $${showMoney(total)}</b></p>
     `;
 }
